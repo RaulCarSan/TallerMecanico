@@ -36,18 +36,16 @@ public class Clientes {
 
         if (clientes.contains(cliente)){
 
-            if ((telefono == null) && !nombre.isBlank()){
+            if ((nombre != null) && !nombre.isBlank()){
+                buscar(cliente).setNombre(nombre);
+            }
+
+            if ((telefono != null) && !telefono.isBlank()){
                 buscar(cliente).setTelefono(telefono);
             }
 
-            if ((nombre == null) && !telefono.isBlank()){
-                buscar(cliente).setTelefono(telefono);
-            }
-
-
+            return buscar(cliente);
         }
-
-
 
         if (!clientes.contains(cliente)){
             throw new TallerMecanicoExcepcion("No existe ningún cliente con ese DNI.");
