@@ -17,7 +17,7 @@ public class Clientes {
     }
 
     public List<Cliente> get() {
-        List<Cliente> nuevoCliente ;
+        List<Cliente> nuevoCliente;
         nuevoCliente = clientes;
         return clientes;
     }
