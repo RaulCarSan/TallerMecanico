@@ -3,8 +3,8 @@ package org.iesalandalus.programacion.tallermecanico.modelo.dominio;
 import java.util.Objects;
 
 public record Vehiculo(String marca, String modelo, String matricula) {
-    private static final String ER_MARCA = "[A-Za-z]+(\\W[ A-Za-z]+)*";
-    private static final String ER_MATRICULA = "\\d{4}[A-Z]{3}";
+    private static final String ER_MARCA = "[A-Z][A-z]+(\\W[ A-Z][a-z]+)*";
+    private static final String ER_MATRICULA = "\\d{4}[^AEIOU]{3}";
 
 
     public Vehiculo {
