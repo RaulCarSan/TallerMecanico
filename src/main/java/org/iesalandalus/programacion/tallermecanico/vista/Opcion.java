@@ -34,10 +34,12 @@ public enum Opcion {
     }
 
     static {
-
-        for (Opcion opciones  : values()){
-
+        for (Opcion opcion  : values()){
+            opciones.put(numeroOpcion,opcion);
         }
+    }
 
+    public boolean esValida(int numeroOpcion){
+        return opciones.containsKey(numeroOpcion);
     }
 }
