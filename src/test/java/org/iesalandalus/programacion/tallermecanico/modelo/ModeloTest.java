@@ -1,5 +1,6 @@
 package org.iesalandalus.programacion.tallermecanico.modelo;
 
+import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Cliente;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Revision;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Vehiculo;
 import org.iesalandalus.programacion.tallermecanico.modelo.negocio.Clientes;
@@ -198,7 +199,7 @@ class ModeloTest {
     @Test
     void getClientesLlamaClientesGet() {
         when(clientes.get()).thenReturn(new ArrayList<>(List.of(cliente)));
-        List<Cliente> clientesExistentes = modelo.getClientes();
+        List<Cliente> clientesExistentes = modelo.getCliente();
         verify(clientes).get();
         assertNotSame(cliente, clientesExistentes.get(0));
     }
