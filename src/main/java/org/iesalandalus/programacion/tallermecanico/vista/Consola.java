@@ -100,7 +100,10 @@ public class Consola {
     public static Revision leerRevision() {
         Cliente cliente = leerCliente();
         Vehiculo vehiculo = leerVehiculo();
+        LocalDate fechaInicio = leerFecha("Introduce la fecha.");
 
-        return new Revision(cliente,vehiculo,)
+        return new Revision(cliente,vehiculo,fechaInicio);
     }
+
+
 }
