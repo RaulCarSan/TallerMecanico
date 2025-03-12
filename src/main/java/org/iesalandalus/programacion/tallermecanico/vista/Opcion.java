@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.tallermecanico.vista;
 
+import org.iesalandalus.programacion.tallermecanico.modelo.TallerMecanicoExcepcion;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -17,7 +19,7 @@ public enum Opcion {
     BUSCAR_REVISION(10,"Esta opcion busca los datos de una revisión."),
     BORRAR_REVISION(11,"Esta opcion borra los datos de una revisión."),
     LISTAR_REVISIONES(12,"Esta opcion muestra una lista de las revisión."),
-    LISTAR_REVISIONES_CLIENTE(13,"Esta opcion muestra los datos de un revisión relacionada con un cliente."),
+    LISTAR_REVISIONES_CLIENTE(13,"Esta opcion muestra los datos de ñas revisiones relacionada con un cliente."),
     LISTAR_REVISIONES_VEHICULO(14,"Esta opcion muestra los datos de las revisiones asignadas a un vehiculo."),
     ANADIR_HORAS_REVISION(15,"Esta opcion añade horas a una revisión."),
     ANADIR_PRECIO_MATERIAL_REVISION(16,"Esta opcion añade costo a la revisión."),
@@ -25,12 +27,13 @@ public enum Opcion {
     SALIR(0,"Esta opción cierra el menu.");
 
 
+
+
     private static int numeroOpcion;
     private String mensaje;
     private static final Map<Integer,Opcion> opciones = new HashMap<>();
 
     Opcion(int numeroOpcion, String mensaje) {
-
     }
 
     static {
@@ -41,5 +44,17 @@ public enum Opcion {
 
     public boolean esValida(int numeroOpcion){
         return opciones.containsKey(numeroOpcion);
+    }
+
+    public int getNumeroOpcion(int numeroOpcion) {
+        if (!esValida(numeroOpcion)){
+         throw new IllegalArgumentException("La opcion no es valida.");
+        }
+        return numeroOpcion;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s, %s, numeroOpcion,mensaje");
     }
 }
