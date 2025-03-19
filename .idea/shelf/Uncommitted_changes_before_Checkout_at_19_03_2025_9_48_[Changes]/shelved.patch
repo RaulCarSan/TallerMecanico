@@ -1,0 +1,19 @@
+Index: src/main/java/org/iesalandalus/programacion/tallermecanico/vista/Opcion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.iesalandalus.programacion.tallermecanico.vista;\r\n\r\nimport org.iesalandalus.programacion.tallermecanico.modelo.TallerMecanicoExcepcion;\r\n\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\nimport java.util.TreeMap;\r\n\r\npublic enum Opcion {\r\n    INSERTAR_CLIENTE(1,\"Esta opción inserta un cliente.\"),\r\n    BUSCAR_CLIENTES(2,\"Esta opcion busca un cliente.\"),\r\n    BORRAR_CLIENTES(3,\"Esta opcion borra un cliente.\"),\r\n    LISTAR_CLIENTES(4,\"Esta opcion muestra una lista de los clientes.\"),\r\n    MODIFICAR_CLIENTES(5,\"Esta opcion modifica los datos de un cliente.\"),\r\n    BUSCAR_VEHICULO(6,\"Esta opcion busca un vehiculo.\"),\r\n    BORRAR_VEHICULO(7,\"Esta opcion borra un vehiculo.\"),\r\n    LISTAR_VEHICULOS(8,\"Esta opcion muestra una lista de los diferentes vehiculos.\"),\r\n    INSERTAR_REVISION(9,\"Esta opcion inserta los datos de una revisión.\"),\r\n    BUSCAR_REVISION(10,\"Esta opcion busca los datos de una revisión.\"),\r\n    BORRAR_REVISION(11,\"Esta opcion borra los datos de una revisión.\"),\r\n    LISTAR_REVISIONES(12,\"Esta opcion muestra una lista de las revisión.\"),\r\n    LISTAR_REVISIONES_CLIENTE(13,\"Esta opcion muestra los datos de ñas revisiones relacionada con un cliente.\"),\r\n    LISTAR_REVISIONES_VEHICULO(14,\"Esta opcion muestra los datos de las revisiones asignadas a un vehiculo.\"),\r\n    ANADIR_HORAS_REVISION(15,\"Esta opcion añade horas a una revisión.\"),\r\n    ANADIR_PRECIO_MATERIAL_REVISION(16,\"Esta opcion añade costo a la revisión.\"),\r\n    CERRAR_REVISION(17,\"Esta opcion cierra una revisión.\"),\r\n    SALIR(0,\"Esta opción cierra el menu.\");\r\n\r\n\r\n\r\n\r\n    private final int numeroOpcion;\r\n    private String mensaje;\r\n    private static final Map<Integer,Opcion> opciones = new HashMap<>();\r\n\r\n    Opcion(int numeroOpcion, String mensaje) {\r\n        this.numeroOpcion = numeroOpcion;\r\n        this.mensaje = mensaje;\r\n    }\r\n\r\n    static {\r\n        for (Opcion opcion  : values()){\r\n            opciones.put(opcion.numeroOpcion,opcion);\r\n        }\r\n    }\r\n\r\n    public boolean esValida(int numeroOpcion){\r\n        return opciones.containsKey(numeroOpcion);\r\n    }\r\n\r\n    public Opcion get(int numeroOpcion) {\r\n        if (!esValida(numeroOpcion)){\r\n         throw new IllegalArgumentException(\"La opcion no es valida.\");\r\n        }\r\n        return opciones.get(numeroOpcion);\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return String.format(\"%d -%s%n\" ,numeroOpcion,mensaje);\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/Opcion.java b/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/Opcion.java
+--- a/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/Opcion.java	(revision 43acb19bd06aad6c7807d9f5f7ded30215530920)
++++ b/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/Opcion.java	(date 1741955293765)
+@@ -1,10 +1,7 @@
+ package org.iesalandalus.programacion.tallermecanico.vista;
+ 
+-import org.iesalandalus.programacion.tallermecanico.modelo.TallerMecanicoExcepcion;
+-
+ import java.util.HashMap;
+ import java.util.Map;
+-import java.util.TreeMap;
+ 
+ public enum Opcion {
+     INSERTAR_CLIENTE(1,"Esta opción inserta un cliente."),
