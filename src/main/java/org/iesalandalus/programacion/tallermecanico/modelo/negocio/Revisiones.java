@@ -54,8 +54,8 @@ public class Revisiones {
 
             for (Revision existingRevision : coleccionDeRevisiones) {
                 if (existingRevision.getCliente().equals(revision.getCliente())) {
-                    if (!existingRevision.estaCerrada() ||
-                            (existingRevision.estaCerrada() && existingRevision.getFechaFin() != null &&
+                    if (!existingRevision.estaCerrado() ||
+                            (existingRevision.estaCerrado() && existingRevision.getFechaFin() != null &&
                                     existingRevision.getFechaFin().isAfter(revision.getFechaInicio()))) {
                         tieneRevisionClienteEnCurso = true;
                     }
@@ -64,8 +64,8 @@ public class Revisiones {
                     }
                 }
                 if (existingRevision.getVehiculo().equals(revision.getVehiculo())) {
-                    if (!existingRevision.estaCerrada() ||
-                            (existingRevision.estaCerrada() && existingRevision.getFechaFin() != null &&
+                    if (!existingRevision.estaCerrado() ||
+                            (existingRevision.estaCerrado() && existingRevision.getFechaFin() != null &&
                                     existingRevision.getFechaFin().isAfter(revision.getFechaInicio()))) {
                         tieneRevisionVehiculoEnCurso = true;
                     }
@@ -99,8 +99,8 @@ public class Revisiones {
             boolean esMismoVehiculo = revision1.getVehiculo().equals(revision.getVehiculo());
 
             if ((esMismoCliente || esMismoVehiculo) &&
-                    (!revision1.estaCerrada() ||
-                            (revision1.estaCerrada() && revision1.getFechaFin() != null && revision1.getFechaFin().isAfter(fechaInicioNuevaRevision)))) {
+                    (!revision1.estaCerrado() ||
+                            (revision1.estaCerrado() && revision1.getFechaFin() != null && revision1.getFechaFin().isAfter(fechaInicioNuevaRevision)))) {
                 sePuedeRealizar = false;
                 break;
             }

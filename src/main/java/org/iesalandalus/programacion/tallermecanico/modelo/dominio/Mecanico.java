@@ -3,22 +3,34 @@ package org.iesalandalus.programacion.tallermecanico.modelo.dominio;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Revision extends Trabajo {
-   private static final float FACTOR_HORA = 35;
+public class Mecanico extends Trabajo {
+    private static final float FACTOR_HORA = 30;
+    private static final float FACTOR_PRECIO_MATERIAL = 1.5F;
+    private float precioMaterial = 0 ;
 
-    public Revision(Cliente cliente, Vehiculo vehiculo, LocalDate fechaInicio){
+
+    public Mecanico(Cliente cliente, Vehiculo vehiculo, LocalDate fechaInicio){
         super(cliente,vehiculo,fechaInicio);
 
     }
 
     @Override
     public float getPrecioEspecifico() {
-        return FACTOR_HORA * getHoras();
+        return (FACTOR_HORA * getHoras()) + (precioMaterial * FACTOR_PRECIO_MATERIAL);
     }
 
-    public Revision(Revision revision){
-        super(revision.getCliente(),revision.getVehiculo(),revision.getFechaInicio());
-        Objects.requireNonNull(revision,"La revisión no puede ser nula.");
+    public void anadirPrecioMaterial(float precioMaterial){
+        precioMaterial = precioMaterial + getPrecioMaterial();
+    }
+
+    public float getPrecioMaterial(){
+        return precioMaterial;
+    }
+
+
+    public Mecanico(Mecanico mecanico){
+        super(mecanico.getCliente(),mecanico.getVehiculo(),mecanico.getFechaInicio());
+        Objects.requireNonNull(mecanico,"La revisión no puede ser nula.");
     }
 
     @Override
