@@ -56,6 +56,6 @@ public record Vehiculo(String marca, String modelo, String matricula) {
 
     @Override
     public String toString() {
-        return String.format("%s - %s - %s", marca, modelo, matricula);
+        return String.format("%s %s - %s", marca, modelo, matricula);
     }
 }

@@ -8,7 +8,6 @@ public class Revision extends Trabajo {
 
     public Revision(Cliente cliente, Vehiculo vehiculo, LocalDate fechaInicio){
         super(cliente,vehiculo,fechaInicio);
-
     }
 
     @Override
@@ -17,18 +16,19 @@ public class Revision extends Trabajo {
     }
 
     public Revision(Revision revision){
-        super(revision.getCliente(),revision.getVehiculo(),revision.getFechaInicio());
-        Objects.requireNonNull(revision,"La revisión no puede ser nula.");
+        super(revision);
     }
 
     @Override
     public String toString() {
         String fechaInicioStr = getFechaInicio().format(FORMATO_FECHA);
         String fechaFinStr = (getFechaFin() == null) ? " " : getFechaFin().format(FORMATO_FECHA);
-        if (getFechaFin() == null){
-            return String.format("%s - %s: (%s -%s), %s horas, %.2f € en material", getCliente(),getVehiculo() , fechaInicioStr, fechaFinStr, getHoras(), getPrecioMaterial());
-        }else {
-            return String.format("%s - %s: (%s - %s), %s horas, %.2f € en material, %.2f € total", getCliente(), getVehiculo(), fechaInicioStr, fechaFinStr, getHoras(), getPrecioMaterial(),getPrecio());
+        String stringBueno =  null;
+        if (getFechaFin() == null) {
+            stringBueno = String.format("Revisión -> %s - %s (%s - ): %s horas", getCliente(), getVehiculo(), fechaInicioStr, getHoras());
+        } else {
+             stringBueno = String.format("Revisión -> %s - %s (%s - %s): %s horas, %.2f € total", getCliente(), getVehiculo(), fechaInicioStr, fechaFinStr, getHoras(), getPrecio());
         }
+        return stringBueno;
     }
 }

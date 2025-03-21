@@ -13,11 +13,10 @@ public abstract class  Trabajo {
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private int horas;
-    private float precioMaterial;
     private Cliente cliente;
     private Vehiculo vehiculo;
 
-    public Trabajo(Cliente cliente,Vehiculo vehiculo,LocalDate fechaInicio){
+    protected Trabajo(Cliente cliente,Vehiculo vehiculo,LocalDate fechaInicio){
         setCliente(cliente);
         setVehiculo(vehiculo);
         setFechaInicio(fechaInicio);
@@ -25,22 +24,22 @@ public abstract class  Trabajo {
         fechaFin = null;
     }
 
-    public Trabajo(Trabajo trabajo){
+    protected Trabajo(Trabajo trabajo){
         Objects.requireNonNull(trabajo,"El trabajo no puede ser nulo.");
-        this.cliente = new Cliente(trabajo.cliente);
-        this.setVehiculo(trabajo.vehiculo);
-        this.setFechaInicio(trabajo.fechaInicio);
-        this.setFechaFin(trabajo.fechaFin);
-        this.horas = trabajo.getHoras();
+        cliente = new Cliente(trabajo.cliente);
+        vehiculo = trabajo.vehiculo;
+        fechaInicio = trabajo.fechaInicio;
+        fechaFin = trabajo.fechaFin;
+        horas = trabajo.horas;
     }
 
     public static Trabajo copiar(Trabajo trabajo){
+        Objects.requireNonNull(trabajo,"El trabajo no puede ser nulo.");
         Trabajo trabajoCopia = null;
-        if (trabajo instanceof Revision){
-            trabajoCopia = new Revision(trabajo.cliente,trabajo.vehiculo,trabajo.fechaInicio);
-        }
-        if (trabajo instanceof Mecanico){
-            trabajoCopia = new Mecanico(trabajo.cliente,trabajo.vehiculo,trabajo.fechaInicio);
+        if (trabajo instanceof Revision revision){
+            trabajoCopia = new Revision(revision);
+        } else if (trabajo instanceof Mecanico mecanico){
+            trabajoCopia = new Mecanico(mecanico);
         }
         return trabajoCopia;
     }
@@ -101,10 +100,6 @@ public abstract class  Trabajo {
         return horas;
     }
 
-    public float getPrecioMaterial() {
-        return precioMaterial;
-    }
-
     private float getDias() {
         if (fechaFin == null) {
             return 0;
@@ -119,22 +114,10 @@ public abstract class  Trabajo {
         if (estaCerrado()) {
             throw new TallerMecanicoExcepcion("No se puede añadir horas, ya que el trabajo está cerrado.");
         }
-
         this.horas = horas + getHoras();
     }
 
-    public void anadirPrecioMaterial(float precioMaterial) throws TallerMecanicoExcepcion {
-        if (precioMaterial <= 0) {
-            throw new IllegalArgumentException("El precio del material a añadir debe ser mayor que cero.");
-        }
 
-        if (estaCerrado()) {
-            throw new TallerMecanicoExcepcion("No se puede añadir precio del material, ya que la revisión está cerrada.");
-        }
-
-
-        this.precioMaterial = precioMaterial + getPrecioMaterial();
-    }
 
     public void cerrar(LocalDate fechaFin) throws TallerMecanicoExcepcion {
         Objects.requireNonNull(fechaFin, "La fecha de fin no puede ser nula.");
@@ -164,13 +147,12 @@ public abstract class  Trabajo {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Revision revision = (Revision) o;
-        return Objects.equals(fechaInicio,getHoras() ) && Objects.equals(cliente, getCliente()) && Objects.equals(vehiculo, getVehiculo());
+        if (!(o instanceof Trabajo trabajo)) return false;
+        return Objects.equals(fechaInicio, trabajo.fechaInicio) && Objects.equals(cliente, trabajo.cliente) && Objects.equals(vehiculo, trabajo.vehiculo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash( cliente, vehiculo,fechaInicio);
+        return Objects.hash(fechaInicio, cliente, vehiculo);
     }
 }

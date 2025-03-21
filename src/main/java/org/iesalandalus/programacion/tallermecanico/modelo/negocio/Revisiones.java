@@ -129,13 +129,6 @@ public class Revisiones {
         return revision;
     }
 
-    public Revision anadirPrecioMaterial(Revision revision, float precioMaterial) throws TallerMecanicoExcepcion{
-        Objects.requireNonNull(revision,"No puedo operar sobre una revisión nula.");
-        getColeccionDeRevisiones(revision).anadirPrecioMaterial(precioMaterial);
-
-        return revision;
-    }
-
     public Revision cerrar(Revision revision,LocalDate fechaFin) throws TallerMecanicoExcepcion{
         Objects.requireNonNull(revision,"No puedo operar sobre una revisión nula.");
         getColeccionDeRevisiones(revision).cerrar(fechaFin);
