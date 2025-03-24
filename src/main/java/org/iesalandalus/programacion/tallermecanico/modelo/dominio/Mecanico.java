@@ -36,8 +36,9 @@ public class Mecanico extends Trabajo {
 
 
     public Mecanico(Mecanico mecanico){
-        super(mecanico.getCliente(),mecanico.getVehiculo(),mecanico.getFechaInicio());
+        super(mecanico);
         Objects.requireNonNull(mecanico,"La revisión no puede ser nula.");
+        precioMaterial = mecanico.precioMaterial;
     }
 
     @Override

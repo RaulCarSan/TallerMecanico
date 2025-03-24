@@ -3,6 +3,9 @@ package org.iesalandalus.programacion.tallermecanico.modelo;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Cliente;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Revision;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Vehiculo;
+import org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria.Clientes;
+import org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria.Trabajos;
+import org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria.Vehiculos;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -10,19 +13,19 @@ import java.util.List;
 
 public class Modelo {
 
-        private List<Cliente> cliente;
-        private List<Vehiculo> vehiculos;
-        private List<Revision> revisiones;
+        private Clientes clientes;
+        private Vehiculos vehiculos;
+        private Trabajos trabajos;
 
         public Modelo() {
-            this.cliente = new ArrayList<>();
+            this.clientes = new ArrayList<>();
             this.vehiculos = new ArrayList<>();
-            this.revisiones = new ArrayList<>();
+            this.trabajos = new ArrayList<>();
         }
 
 
         public void insertar(Cliente cliente) {
-            this.cliente.add(cliente);
+            this.clientes.add(cliente);
         }
 
         public void insertar(Vehiculo vehiculo) {
@@ -30,11 +33,11 @@ public class Modelo {
         }
 
         public void insertar(Revision revision) {
-            revisiones.add(revision);
+            trabajos.add(revision);
         }
 
         public Cliente buscar(Cliente cliente) {
-            return this.cliente.contains(cliente) ? cliente : null;
+            return this.clientes.contains(cliente) ? cliente : null;
         }
 
         public Vehiculo buscar(Vehiculo vehiculo) {
@@ -42,11 +45,11 @@ public class Modelo {
         }
 
         public Revision buscar(Revision revision) {
-            return revisiones.contains(revision) ? revision : null;
+            return trabajos.contains(revision) ? revision : null;
         }
 
         public Cliente modificar(Cliente cliente, String nombre, String telefono) {
-            if (this.cliente.contains(cliente)) {
+            if (this.clientes.contains(cliente)) {
                 cliente.setNombre(nombre);
                 cliente.setTelefono(telefono);
                 return cliente;
@@ -55,7 +58,7 @@ public class Modelo {
         }
 
         public Revision anadirHoras(Revision revision, int horas)throws TallerMecanicoExcepcion {
-            if (revisiones.contains(revision)) {
+            if (trabajos.contains(revision)) {
                 revision.anadirHoras(revision.getHoras() + horas);
                 return revision;
             }
@@ -63,7 +66,7 @@ public class Modelo {
         }
 
         public Revision anadirPrecioMaterial(Revision revision, float precioMaterial)throws TallerMecanicoExcepcion {
-            if (revisiones.contains(revision)) {
+            if (trabajos.contains(revision)) {
                 revision.anadirPrecioMaterial(revision.getPrecioMaterial() + precioMaterial);
                 return revision;
             }
@@ -71,7 +74,7 @@ public class Modelo {
         }
 
         public Revision cerrar(Revision revision, LocalDate fechaFin)throws TallerMecanicoExcepcion {
-            if (revisiones.contains(revision)) {
+            if (trabajos.contains(revision)) {
                 revision.cerrar(fechaFin);
                 return revision;
             }
@@ -79,7 +82,7 @@ public class Modelo {
         }
 
         public void borrar(Cliente cliente) {
-            this.cliente.remove(cliente);
+            this.clientes.remove(cliente);
         }
 
         public void borrar(Vehiculo vehiculo) {
@@ -87,24 +90,24 @@ public class Modelo {
         }
 
         public void borrar(Revision revision) {
-            revisiones.remove(revision);
+            trabajos.remove(revision);
         }
 
         public List<Cliente> getCliente() {
-            return new ArrayList<>(cliente);
+            return new ArrayList<>(clientes);
         }
 
         public List<Vehiculo> getVehiculos() {
             return new ArrayList<>(vehiculos);
         }
 
-        public List<Revision> getRevisiones() {
-            return new ArrayList<>(revisiones);
+        public List<Revision> getTrabajos() {
+            return new ArrayList<>(trabajos);
         }
 
         public List<Revision> getRevisiones(Cliente cliente) {
             List<Revision> resultado = new ArrayList<>();
-            for (Revision rev : revisiones) {
+            for (Revision rev : trabajos) {
                 if (rev.getCliente().equals(cliente)) {
                     resultado.add(rev);
                 }
@@ -114,7 +117,7 @@ public class Modelo {
 
         public List<Revision> getRevisiones(Vehiculo vehiculo) {
             List<Revision> resultado = new ArrayList<>();
-            for (Revision rev : revisiones) {
+            for (Revision rev : trabajos) {
                 if (rev.getVehiculo().equals(vehiculo)) {
                     resultado.add(rev);
                 }
