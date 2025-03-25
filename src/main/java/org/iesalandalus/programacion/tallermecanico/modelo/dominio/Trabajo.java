@@ -124,7 +124,6 @@ public abstract class  Trabajo {
         if (estaCerrado()) {
             throw new TallerMecanicoExcepcion("El trabajo ya está cerrado.");
         }
-
         setFechaFin(fechaFin);
     }
 

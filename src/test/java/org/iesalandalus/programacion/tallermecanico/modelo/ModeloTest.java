@@ -27,7 +27,7 @@ class ModeloTest {
     @Mock
     private static ITrabajos trabajos;
     @InjectMocks
-    private Modelo modelo = FabricaModelo.CASCADA.crear(FabricaFuenteDatos.MEMORIA);
+    private ModeloCascada modelo = FabricaModelo.CASCADA.crear(FabricaFuenteDatos.MEMORIA);
 
     private static Cliente cliente;
     private static Vehiculo vehiculo;
