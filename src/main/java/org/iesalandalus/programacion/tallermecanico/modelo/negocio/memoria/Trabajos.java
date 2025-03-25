@@ -43,9 +43,9 @@ public class Trabajos implements ITrabajos {
 
 
     public Trabajo getColeccionDeTrabajos(Trabajo trabajo) throws TallerMecanicoExcepcion{
-        Objects.requireNonNull(trabajo, "La revision no puede ser nula.");
+        Objects.requireNonNull(trabajo, "El trabajo no puede ser nulo.");
         if (!coleccionDeTrabajos.contains(trabajo)){
-            throw new TallerMecanicoExcepcion("No existe ninguna revisión igual.");
+            throw new TallerMecanicoExcepcion("No existe ningún trabajo igual.");
         }
         int index = 0;
         if (coleccionDeTrabajos.contains(trabajo)){
@@ -57,7 +57,7 @@ public class Trabajos implements ITrabajos {
 
     @Override
     public void insertar(Trabajo trabajo) throws TallerMecanicoExcepcion {
-        Objects.requireNonNull(trabajo, "No se puede insertar una revisión nula.");
+        Objects.requireNonNull(trabajo, "No se puede insertar un trabajo nulo.");
         comprobarTrabajo(trabajo.getCliente(), trabajo.getVehiculo(), trabajo.getFechaInicio());
         coleccionDeTrabajos.add(trabajo);
     }
@@ -70,19 +70,19 @@ public class Trabajos implements ITrabajos {
         for (Trabajo trabajoExistente : coleccionDeTrabajos) {
             if (!trabajoExistente.estaCerrado()) {
                 if (trabajoExistente.getCliente().equals(cliente)) {
-                    throw new TallerMecanicoExcepcion("El cliente tiene otra revisión en curso.");
+                    throw new TallerMecanicoExcepcion("El cliente tiene otro trabajo en curso.");
                 }
                 if (trabajoExistente.getVehiculo().equals(vehiculo)) {
-                    throw new TallerMecanicoExcepcion("El vehículo está actualmente en revisión.");
+                    throw new TallerMecanicoExcepcion("El vehículo está actualmente en el taller.");
                 }
             }
 
             if (trabajoExistente.estaCerrado()) {
                 if (trabajoExistente.getCliente().equals(cliente) && !fechaRevision.isAfter(trabajoExistente.getFechaFin())) {
-                    throw new TallerMecanicoExcepcion("El cliente tiene una revisión posterior.");
+                    throw new TallerMecanicoExcepcion("El cliente tiene otro trabajo posterior.");
                 }
                 if (trabajoExistente.getVehiculo().equals(vehiculo) && !fechaRevision.isAfter(trabajoExistente.getFechaFin())) {
-                    throw new TallerMecanicoExcepcion("El vehículo tiene una revisión posterior.");
+                    throw new TallerMecanicoExcepcion("El vehículo tiene otro trabajo posterior.");
                 }
             }
         }
@@ -96,20 +96,20 @@ public class Trabajos implements ITrabajos {
         while (iterator.hasNext() && !encontrado) {
             Trabajo trabajo = iterator.next();
             boolean esMismoVehiculo = trabajo.getVehiculo().equals(vehiculo);
-            boolean estaAbierto = trabajo.estaCerrado();
+            boolean estaAbierto = !trabajo.estaCerrado();
             if (estaAbierto && esMismoVehiculo) {
                 trabajoAbiertoMismoVehiculo = trabajo;
                 encontrado = true;
             }
         }
         if (trabajoAbiertoMismoVehiculo == null){
-            throw new TallerMecanicoExcepcion("El trabajo no se encuentra en la lista.");
+            throw new TallerMecanicoExcepcion("No existe ningún trabajo abierto para dicho vehículo.");
         }
         return trabajoAbiertoMismoVehiculo;
     }
     @Override
     public Trabajo anadirHoras(Trabajo trabajo, int horas) throws TallerMecanicoExcepcion {
-        Objects.requireNonNull(trabajo, "No puedo operar sobre una revisión nula.");
+        Objects.requireNonNull(trabajo, "No puedo añadir horas a un trabajo nulo.");
         Trabajo trabajo1;
         trabajo1 = getTrabajoAbierto(trabajo.getVehiculo());
         trabajo1.anadirHoras(horas);
@@ -118,11 +118,11 @@ public class Trabajos implements ITrabajos {
 
     @Override
     public Trabajo anadirPrecioMaterial(Trabajo trabajo, float precioMaterial) throws TallerMecanicoExcepcion {
-        Objects.requireNonNull(trabajo, "No puedo operar sobre una revisión nula.");
+        Objects.requireNonNull(trabajo, "No puedo añadir precio del material a un trabajo nulo.");
         Trabajo trabajo1;
         trabajo1 = getTrabajoAbierto(trabajo.getVehiculo());
-        if (trabajo1 instanceof Revision revision){
-            throw new TallerMecanicoExcepcion("No se le puede añadir precio al material de una revision.");
+        if (trabajo1 instanceof Revision){
+            throw new TallerMecanicoExcepcion("No se puede añadir precio al material para este tipo de trabajos.");
         } else if (trabajo1 instanceof Mecanico mecanico){
             mecanico.anadirPrecioMaterial(precioMaterial);
         }
@@ -131,14 +131,14 @@ public class Trabajos implements ITrabajos {
 
     @Override
     public Trabajo cerrar(Trabajo trabajo, LocalDate fechaFin) throws TallerMecanicoExcepcion {
-        Objects.requireNonNull(trabajo, "No puedo operar sobre una revisión nula.");
+        Objects.requireNonNull(trabajo, "No puedo cerrar un trabajo nulo.");
         getTrabajoAbierto(trabajo.getVehiculo()).cerrar(fechaFin);
-        return getColeccionDeTrabajos(trabajo);
+        return trabajo;
     }
 
     @Override
     public Trabajo buscar(Trabajo trabajo) {
-        Objects.requireNonNull(trabajo, "No se puede buscar una revisión nula.");
+        Objects.requireNonNull(trabajo, "No se puede buscar un trabajo nulo.");
         if (coleccionDeTrabajos.contains(trabajo)) {
             int clientesIndex = coleccionDeTrabajos.indexOf(trabajo);
             return coleccionDeTrabajos.get(clientesIndex);
@@ -149,11 +149,11 @@ public class Trabajos implements ITrabajos {
 
     @Override
     public void borrar(Trabajo trabajo) throws TallerMecanicoExcepcion {
-        Objects.requireNonNull(trabajo, "No se puede borrar una revisión nula.");
+        Objects.requireNonNull(trabajo, "No se puede borrar un trabajo nulo.");
         if (coleccionDeTrabajos.contains(trabajo)) {
             coleccionDeTrabajos.remove(trabajo);
         } else {
-            throw new TallerMecanicoExcepcion("No existe ninguna revisión igual.");
+            throw new TallerMecanicoExcepcion("No existe ningún trabajo igual.");
         }
     }
 }
