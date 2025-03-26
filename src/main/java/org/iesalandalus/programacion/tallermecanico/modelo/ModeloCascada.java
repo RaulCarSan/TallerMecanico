@@ -1,10 +1,7 @@
 package org.iesalandalus.programacion.tallermecanico.modelo;
 
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.*;
-import org.iesalandalus.programacion.tallermecanico.modelo.negocio.FabricaFuenteDatos;
-import org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria.Clientes;
-import org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria.Trabajos;
-import org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria.Vehiculos;
+import org.iesalandalus.programacion.tallermecanico.modelo.negocio.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,22 +10,22 @@ import java.util.Objects;
 
 public class ModeloCascada implements Modelo {
 
-    private Clientes clientes;
-    private Vehiculos vehiculos;
-    private Trabajos trabajos;
-
-
+    private IClientes clientes;
+    private IVehiculos vehiculos;
+    private ITrabajos trabajos;
 
     public ModeloCascada(FabricaFuenteDatos fabricaFuenteDatos){
-        fabricaFuenteDatos.crear();
+        Objects.requireNonNull(fabricaFuenteDatos,"No se puede trabajar con unos datos nulos.");
+        IFuenteDatos fuenteDatos = fabricaFuenteDatos.crear();
+        clientes = fuenteDatos.crearClientes();
+        vehiculos = fuenteDatos.crearVehiculos();
+        trabajos = fuenteDatos.crearTrabajos();
         comenzar();
     }
 
     @Override
     public void comenzar(){
-        clientes = new Clientes();
-        vehiculos = new Vehiculos();
-        trabajos = new Trabajos();
+        System.out.println("Modelo comenzado");
     }
 
     @Override
@@ -52,8 +49,12 @@ public class ModeloCascada implements Modelo {
     @Override
     public void insertar(Trabajo trabajo) throws TallerMecanicoExcepcion{
         Objects.requireNonNull(trabajo,"La revisión no puede ser nula.");
-        Trabajo.copiar(trabajo);
-        trabajos.insertar(trabajo);
+        Trabajo trabajoInsertar = null;
+        if (trabajo instanceof Revision revision){
+            trabajoInsertar = new Revision(clientes.buscar(trabajo.getCliente()),vehiculos.buscar(trabajo.getVehiculo()),trabajo.getFechaInicio());
+        } else if (trabajo instanceof Mecanico mecanico){
+            trabajoInsertar = new Mecanico(clientes.buscar(trabajo.getCliente()),vehiculos.buscar(trabajo.getVehiculo()),trabajo.getFechaInicio());
+        }
     }
 
     @Override
