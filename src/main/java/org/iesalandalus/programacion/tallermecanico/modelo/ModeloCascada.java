@@ -55,6 +55,7 @@ public class ModeloCascada implements Modelo {
         } else if (trabajo instanceof Mecanico mecanico){
             trabajoInsertar = new Mecanico(clientes.buscar(trabajo.getCliente()),vehiculos.buscar(trabajo.getVehiculo()),trabajo.getFechaInicio());
         }
+        trabajos.insertar(trabajoInsertar);
     }
 
     @Override
@@ -92,16 +93,7 @@ public class ModeloCascada implements Modelo {
     @Override
     public Trabajo anadirPrecioMaterial(Trabajo trabajo, float precioMaterial) throws TallerMecanicoExcepcion{
         Objects.requireNonNull(trabajo,"La revisión no puede ser nula.");
-        Trabajo trabajo1 = null;
-        if (trabajo instanceof Revision){
-            throw new TallerMecanicoExcepcion("No se puede");
-        }
-        if (trabajo instanceof Mecanico) {
-            trabajo1 = Trabajo.copiar(trabajo);
-            trabajos.anadirPrecioMaterial(trabajo, precioMaterial);
-        }
-
-        return trabajo1;
+        return trabajos.anadirPrecioMaterial(trabajo,precioMaterial);
     }
 
     @Override
