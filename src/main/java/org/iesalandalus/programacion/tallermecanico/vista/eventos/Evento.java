@@ -15,6 +15,8 @@ public enum Evento {
     BORRAR_VEHICULO(22,"Borrar un vehiculo."),
     LISTAR_VEHICULOS(23,"Listar vehículos."),
     INSERTAR_TRABAJO(30,"Insertar una revisión."),
+    INSERTAR_REVISION(36,"Inserta un vehiculo"),
+    INSERTAR_MECANICO(37,"Inserta un mecanico."),
     BUSCAR_TRABAJO(31, "Buscar una revisión."),
     BORRAR_TRABAJO(32,"Borrar una revisión."),
     LISTAR_TRABAJOS(33,"Listar revisiones."),

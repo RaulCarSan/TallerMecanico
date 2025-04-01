@@ -20,7 +20,7 @@ public class Consola {
     public static void mostrarMenu(){
         mostrarCabecera("Gestión de un taller mecánico");
         for (Evento evento : Evento.values()){
-            System.out.print(evento);
+            System.out.println(evento);
         }
     }
 
@@ -28,7 +28,7 @@ public class Consola {
         Evento evento = null;
         do {
             try {
-                evento = evento.get(leerEntero("\n Elige una opción"));
+                evento = evento.get(leerEntero("\n Elige una opción: "));
 
             }catch (IllegalArgumentException e){
                 System.out.printf("ERROR: %s%n", e.getMessage());

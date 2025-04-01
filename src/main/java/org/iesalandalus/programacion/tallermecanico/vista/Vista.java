@@ -1,5 +1,6 @@
 package org.iesalandalus.programacion.tallermecanico.vista;
 
+import org.iesalandalus.programacion.tallermecanico.controlador.Controlador;
 import org.iesalandalus.programacion.tallermecanico.modelo.TallerMecanicoExcepcion;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.*;
 import org.iesalandalus.programacion.tallermecanico.vista.eventos.Evento;
@@ -52,4 +53,6 @@ public interface Vista {
     void mostarVehiculo(Vehiculo vehiculo);
 
     void mostarCliente(Cliente cliente);
+
+    void setControlador(Controlador controlador);
 }

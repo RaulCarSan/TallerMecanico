@@ -144,6 +144,11 @@ public GestorEventos gestorEventos;
 
     @Override
     public void notificarResultado(Evento evento, String texto, boolean exito){
+        if (exito){
+            System.out.println(texto);
+        }else {
+            System.out.printf("ERROR: %s%n",texto);
+        }
     }
 
     @Override
@@ -205,10 +210,11 @@ public GestorEventos gestorEventos;
         System.out.println(cliente);
     }
 
-
-
-
-
+    @Override
+    public void setControlador(Controlador controlador) {
+        Objects.requireNonNull(controlador,"El controlador no puede ser nulo.");
+        this.controlador = controlador;
+    }
 
 
 }
