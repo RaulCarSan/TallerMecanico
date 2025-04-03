@@ -1,40 +1,43 @@
-package org.iesalandalus.programacion.tallermecanico.modelo.negocio;
+package org.iesalandalus.programacion.tallermecanico.modelo.negocio.memoria;
 
 import org.iesalandalus.programacion.tallermecanico.modelo.TallerMecanicoExcepcion;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Cliente;
+import org.iesalandalus.programacion.tallermecanico.modelo.negocio.IClientes;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Clientes {
+public class Clientes implements IClientes {
 
-    Cliente coleccionClientes;
-    List<Cliente> clientes = new ArrayList<>();
+    List<Cliente> coleccionClientes = new ArrayList<>();
 
     public Clientes(){
-        clientes  = new ArrayList<>();
+        coleccionClientes = new ArrayList<>();
     }
 
+    @Override
     public List<Cliente> get() {
         List<Cliente> nuevoCliente;
-        nuevoCliente = clientes;
-        return clientes;
+        nuevoCliente = coleccionClientes;
+        return coleccionClientes;
     }
 
+    @Override
     public void insertar(Cliente cliente)throws TallerMecanicoExcepcion{
         Objects.requireNonNull(cliente, "No se puede insertar un cliente nulo.");
-        if (!clientes.contains(cliente)){
-                clientes.add(cliente);
+        if (!coleccionClientes.contains(cliente)){
+                coleccionClientes.add(cliente);
         }else {
             throw new TallerMecanicoExcepcion("Ya existe un cliente con ese DNI.");
         }
     }
 
-    public Cliente modificar(Cliente cliente,String nombre, String telefono) throws TallerMecanicoExcepcion{
+    @Override
+    public Cliente modificar(Cliente cliente, String nombre, String telefono) throws TallerMecanicoExcepcion{
         Objects.requireNonNull(cliente, "No se puede modificar un cliente nulo.");
 
-        if (clientes.contains(cliente)){
+        if (coleccionClientes.contains(cliente)){
 
             if ((nombre != null) && !nombre.isBlank()){
                 buscar(cliente).setNombre(nombre);
@@ -47,27 +50,29 @@ public class Clientes {
             return buscar(cliente);
         }
 
-        if (!clientes.contains(cliente)){
+        if (!coleccionClientes.contains(cliente)){
             throw new TallerMecanicoExcepcion("No existe ningún cliente con ese DNI.");
         }
 
         return buscar(cliente);
     }
 
+    @Override
     public Cliente buscar(Cliente cliente){
         Objects.requireNonNull(cliente,"No se puede buscar un cliente nulo.");
-        if (clientes.contains(cliente)){
-            int clientesIndex = clientes.indexOf(cliente);
-            return clientes.get(clientesIndex);
+        if (coleccionClientes.contains(cliente)){
+            int clientesIndex = coleccionClientes.indexOf(cliente);
+            return coleccionClientes.get(clientesIndex);
         }else{
             return null;
         }
     }
 
+    @Override
     public void borrar(Cliente cliente)throws TallerMecanicoExcepcion{
         Objects.requireNonNull(cliente,"No se puede borrar un cliente nulo.");
-        if (clientes.contains(cliente)){
-            clientes.remove(cliente);
+        if (coleccionClientes.contains(cliente)){
+            coleccionClientes.remove(cliente);
         }else {
             throw new TallerMecanicoExcepcion("No existe ningún cliente con ese DNI.");
         }

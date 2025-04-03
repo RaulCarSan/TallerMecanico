@@ -1,0 +1,459 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f8b0e04e-6981-41d9-b2bd-c9ae382a0816\" name=\"Changes\" comment=\"Commit inicial con el enunciado, las dependencias y los tests.\">\r\n      <change beforePath=\"$PROJECT_DIR$/README.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/README.md\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CoverageOptionsProvider\">\r\n    <option name=\"myAddOrReplace\" value=\"0\" />\r\n  </component>\r\n  <component name=\"ExportToHTMLSettings\">\r\n    <option name=\"OPEN_IN_BROWSER\" value=\"true\" />\r\n    <option name=\"OUTPUT_DIRECTORY\" value=\"$PROJECT_DIR$/htmlReport\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"TallerMecanico\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JUnit5 Test Class\" />\r\n        <option value=\"Enum\" />\r\n        <option value=\"Class\" />\r\n        <option value=\"Exception\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;JRJimenezReyes&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/RaulCarSan/TallerMecanico.git\",\r\n    \"accountId\": \"119853af-fd1a-40db-a05f-6ada0bcb3575\"\r\n  }\r\n}]]></component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2b7VdNJDYYb9khOs32YlvwYhqd1\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Gradle.Build TallerMecanico.executor\": \"Run\",\r\n    \"Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'.executor\": \"Run\",\r\n    \"JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test.executor\": \"Run\",\r\n    \"RunOnceActivity.ChatTagsLlmMigration\": \"true\",\r\n    \"RunOnceActivity.CodyAccountHistoryMigration\": \"true\",\r\n    \"RunOnceActivity.CodyAccountsIdsRefresh\": \"true\",\r\n    \"RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount\": \"true\",\r\n    \"RunOnceActivity.CodyConvertUrlToCodebaseName\": \"true\",\r\n    \"RunOnceActivity.CodyHistoryLlmMigration\": \"true\",\r\n    \"RunOnceActivity.CodyMigrateChatHistory-v2\": \"true\",\r\n    \"RunOnceActivity.CodyProjectSettingsMigration\": \"true\",\r\n    \"RunOnceActivity.DeprecatedChatLlmMigration\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.ToggleCodyToolWindowAfterMigration\": \"true\",\r\n    \"SONARLINT_PRECOMMIT_ANALYSIS\": \"true\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\": \"JUnit5\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5\": \"\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/diurno/IdeaProjects/TallerMecanico/src/test/java/org/iesalandalus/programacion/tallermecanico/modelo/ModeloTest.java\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"reference.projectsettings.compiler.excludes\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/src/test/java/org/iesalandalus/programacion/tallermecanico/modelo/dominio\" />\r\n      <recent name=\"$PROJECT_DIR$/src/main/java/org/iesalandalus/programacion/tallermecanico/modelo/dominio\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"org.iesalandalus.programacion.tallermecanico.modelo\" />\r\n      <recent name=\"org.iesalandalus.programacion.tallermecanico.modelo.negocio\" />\r\n      <recent name=\"org.iesalandalus.programacion.tallermecanico.modelo.dominio\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'\">\r\n    <configuration name=\"Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":test\" />\r\n            <option value=\"--tests\" />\r\n            <option value=\"&quot;org.iesalandalus.programacion.tallermecanico.modelo.*&quot;\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <RunAsTest>true</RunAsTest>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"ModeloTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TallerMecanico.test\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"org.iesalandalus.programacion.tallermecanico.modelo\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.ModeloTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"RevisionTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TallerMecanico.test\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.dominio.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.dominio\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.dominio.RevisionTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TallerMecanicoResuelto.test\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"org.iesalandalus.programacion.tallermecanico.modelo\" />\r\n      <option name=\"TEST_OBJECT\" value=\"package\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TallerMecanico.test\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"org.iesalandalus.programacion.tallermecanico.modelo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"org.iesalandalus.programacion.tallermecanico.modelo\" />\r\n      <option name=\"TEST_OBJECT\" value=\"package\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'\" />\r\n      <item itemvalue=\"JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test\" />\r\n      <item itemvalue=\"JUnit.RevisionTest\" />\r\n      <item itemvalue=\"JUnit.ModeloTest\" />\r\n      <item itemvalue=\"JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'\" />\r\n        <item itemvalue=\"JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test\" />\r\n        <item itemvalue=\"JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test\" />\r\n        <item itemvalue=\"JUnit.RevisionTest\" />\r\n        <item itemvalue=\"JUnit.ModeloTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f8b0e04e-6981-41d9-b2bd-c9ae382a0816\" name=\"Changes\" comment=\"\" />\r\n      <created>1705566193024</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705566193024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Commit inicial con el enunciado, las dependencias y los tests.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739183562324</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739183562325</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Commit inicial con el enunciado, las dependencias y los tests.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739183845414</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739183845414</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"Commit inicial con el enunciado, las dependencias y los tests.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Commit inicial con el enunciado, las dependencias y los tests.\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$RevisionTest.ic\" NAME=\"RevisionTest Coverage Results\" MODIFIED=\"1706862963586\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.dominio.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$ClienteTest.ic\" NAME=\"ClienteTest Coverage Results\" MODIFIED=\"1706862931206\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.dominio.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$VehiculosTest.ic\" NAME=\"VehiculosTest Coverage Results\" MODIFIED=\"1706862990915\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.negocio.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$RevisionesTest.ic\" NAME=\"RevisionesTest Coverage Results\" MODIFIED=\"1706863003924\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.negocio.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$ModeloTest.ic\" NAME=\"ModeloTest Coverage Results\" MODIFIED=\"1706863016430\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$org_iesalandalus_programacion_tallermecanico_modelo_in_TallerMecanico_test.ic\" NAME=\"org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test Coverage Results\" MODIFIED=\"1706605137635\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$VehiculoTest.ic\" NAME=\"VehiculoTest Coverage Results\" MODIFIED=\"1706862953572\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.dominio.*</FILTER>\r\n    </SUITE>\r\n    <SUITE FILE_PATH=\"coverage/TallerMecanico$ClientesTest.ic\" NAME=\"ClientesTest Coverage Results\" MODIFIED=\"1706862978002\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.iesalandalus.programacion.tallermecanico.modelo.negocio.*</FILTER>\r\n    </SUITE>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6fa0ef5e3265a7d8f2ac816f590761d1b61076dd)
++++ b/.idea/workspace.xml	(date 1742374101044)
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f8b0e04e-6981-41d9-b2bd-c9ae382a0816" name="Changes" comment="Commit inicial con el enunciado, las dependencias y los tests.">
+-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+-    </list>
++    <list default="true" id="f8b0e04e-6981-41d9-b2bd-c9ae382a0816" name="Changes" comment="fin de clase" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -48,13 +46,19 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="JUnit5 Test Class" />
++        <option value="Exception" />
++        <option value="Record" />
+         <option value="Enum" />
+         <option value="Class" />
+-        <option value="Exception" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+@@ -63,12 +67,12 @@
+     &quot;assignee&quot;: &quot;JRJimenezReyes&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/RaulCarSan/TallerMecanico.git",
+-    "accountId": "119853af-fd1a-40db-a05f-6ada0bcb3575"
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/RaulCarSan/TallerMecanico.git&quot;,
++    &quot;accountId&quot;: &quot;119853af-fd1a-40db-a05f-6ada0bcb3575&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -81,37 +85,48 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Gradle.Build TallerMecanico.executor": "Run",
+-    "Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'.executor": "Run",
+-    "JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test.executor": "Run",
+-    "RunOnceActivity.ChatTagsLlmMigration": "true",
+-    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+-    "RunOnceActivity.CodyAccountsIdsRefresh": "true",
+-    "RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount": "true",
+-    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+-    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+-    "RunOnceActivity.CodyMigrateChatHistory-v2": "true",
+-    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+-    "RunOnceActivity.DeprecatedChatLlmMigration": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
+-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+-    "git-widget-placeholder": "master",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/diurno/IdeaProjects/TallerMecanico/src/test/java/org/iesalandalus/programacion/tallermecanico/modelo/ModeloTest.java",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.excludes"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Gradle.Build TallerMecanico.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.ClienteTest.constructorNombreNuloDniValidoTelefonoValidoLanzaExcepcion.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.ClienteTest.constructorNombreValidoDniValidoTelefonoValidoCreaClienteCorrectamente.executor&quot;: &quot;Debug&quot;,
++    &quot;JUnit.ClienteTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.ClientesTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.RevisionTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.RevisionesTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.RevisionesTest.insertarRevisionVehiculoRevisionAnteriorLanzaExcepcion.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.VehiculoTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.VehiculosTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ChatTagsLlmMigration&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyAccountHistoryMigration&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyAccountsIdsRefresh&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyMigrateChatHistory-v2&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.DeprecatedChatLlmMigration&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ToggleCodyToolWindowAfterMigration&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;Sprint__inicial&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/diurno/IdeaProjects/TallerMecanico&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.excludes&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\diurno\IdeaProjects\TallerMecanico" />
+       <recent name="$PROJECT_DIR$/src/test/java/org/iesalandalus/programacion/tallermecanico/modelo/dominio" />
+       <recent name="$PROJECT_DIR$/src/main/java/org/iesalandalus/programacion/tallermecanico/modelo/dominio" />
+     </key>
+@@ -124,104 +139,97 @@
+       <recent name="org.iesalandalus.programacion.tallermecanico.modelo.dominio" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'">
+-    <configuration name="Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+-      <ExternalSystemSettings>
+-        <option name="executionName" />
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="" />
+-        <option name="taskDescriptions">
+-          <list />
+-        </option>
+-        <option name="taskNames">
+-          <list>
+-            <option value=":test" />
+-            <option value="--tests" />
+-            <option value="&quot;org.iesalandalus.programacion.tallermecanico.modelo.*&quot;" />
+-          </list>
+-        </option>
+-        <option name="vmOptions" />
+-      </ExternalSystemSettings>
+-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+-      <DebugAllEnabled>false</DebugAllEnabled>
+-      <RunAsTest>true</RunAsTest>
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="ModeloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="JUnit.RevisionesTest.insertarRevisionVehiculoRevisionAnteriorLanzaExcepcion">
++    <configuration name="RevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="TallerMecanico.test" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.*" />
++          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo" />
+-      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.ModeloTest" />
+-      <option name="METHOD_NAME" value="" />
++      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio" />
++      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio.RevisionTest" />
+       <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="RevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="RevisionesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="TallerMecanico.test" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio.*" />
++          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio" />
+-      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio.RevisionTest" />
++      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio" />
++      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio.RevisionesTest" />
+       <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="TallerMecanicoResuelto.test" />
++    <configuration name="RevisionesTest.insertarRevisionVehiculoRevisionAnteriorLanzaExcepcion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="TallerMecanico.test" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio" />
++      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio.RevisionesTest" />
++      <option name="METHOD_NAME" value="insertarRevisionVehiculoRevisionAnteriorLanzaExcepcion" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="VehiculoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="TallerMecanico.test" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.*" />
++          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo" />
+-      <option name="TEST_OBJECT" value="package" />
++      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio" />
++      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.dominio.VehiculoTest" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="VehiculosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="TallerMecanico.test" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.*" />
++          <option name="PATTERN" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo" />
+-      <option name="TEST_OBJECT" value="package" />
++      <option name="PACKAGE_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio" />
++      <option name="MAIN_CLASS_NAME" value="org.iesalandalus.programacion.tallermecanico.modelo.negocio.VehiculosTest" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <list>
+-      <item itemvalue="Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'" />
+-      <item itemvalue="JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test" />
++      <item itemvalue="JUnit.RevisionesTest" />
++      <item itemvalue="JUnit.RevisionesTest.insertarRevisionVehiculoRevisionAnteriorLanzaExcepcion" />
+       <item itemvalue="JUnit.RevisionTest" />
+-      <item itemvalue="JUnit.ModeloTest" />
+-      <item itemvalue="JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test" />
++      <item itemvalue="JUnit.VehiculosTest" />
++      <item itemvalue="JUnit.VehiculoTest" />
+     </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Gradle.Tests in 'org.iesalandalus.programacion.tallermecanico.modelo'" />
+-        <item itemvalue="JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanicoResuelto.test" />
+-        <item itemvalue="JUnit.org.iesalandalus.programacion.tallermecanico.modelo in TallerMecanico.test" />
++        <item itemvalue="JUnit.RevisionesTest.insertarRevisionVehiculoRevisionAnteriorLanzaExcepcion" />
++        <item itemvalue="JUnit.RevisionesTest" />
+         <item itemvalue="JUnit.RevisionTest" />
+-        <item itemvalue="JUnit.ModeloTest" />
++        <item itemvalue="JUnit.VehiculosTest" />
++        <item itemvalue="JUnit.VehiculoTest" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -250,7 +258,135 @@
+       <option name="project" value="LOCAL" />
+       <updated>1739183845414</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Comit Inicial">
++      <option name="closed" value="true" />
++      <created>1739351016062</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1739351016062</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Pasa los test de Cliente">
++      <option name="closed" value="true" />
++      <created>1739354627191</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1739354627191</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Fin clase">
++      <option name="closed" value="true" />
++      <created>1739453852030</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1739453852030</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Pasa los test de clientes">
++      <option name="closed" value="true" />
++      <created>1739534135205</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1739534135205</updated>
++    </task>
++    <task id="LOCAL-00007" summary="Fin clase">
++      <option name="closed" value="true" />
++      <created>1739536917702</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1739536917702</updated>
++    </task>
++    <task id="LOCAL-00008" summary="Vehículo pasa los test">
++      <option name="closed" value="true" />
++      <created>1739778019208</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1739778019208</updated>
++    </task>
++    <task id="LOCAL-00009" summary="Vehículos pasa los test">
++      <option name="closed" value="true" />
++      <created>1739779241248</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1739779241248</updated>
++    </task>
++    <task id="LOCAL-00010" summary="fin clase">
++      <option name="closed" value="true" />
++      <created>1739786858814</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1739786858814</updated>
++    </task>
++    <task id="LOCAL-00011" summary="Revision pasa los test.">
++      <option name="closed" value="true" />
++      <created>1740056880109</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1740056880109</updated>
++    </task>
++    <task id="LOCAL-00012" summary="Fin de clase">
++      <option name="closed" value="true" />
++      <created>1740058677251</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1740058677251</updated>
++    </task>
++    <task id="LOCAL-00013" summary="Fin de clase">
++      <option name="closed" value="true" />
++      <created>1740141861801</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1740141861801</updated>
++    </task>
++    <task id="LOCAL-00014" summary="Fin de clase">
++      <option name="closed" value="true" />
++      <created>1740143414350</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1740143414350</updated>
++    </task>
++    <task id="LOCAL-00015" summary="Fin de clase">
++      <option name="closed" value="true" />
++      <created>1741699994165</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1741699994165</updated>
++    </task>
++    <task id="LOCAL-00016" summary="Fin de clase">
++      <option name="closed" value="true" />
++      <created>1741700267632</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1741700267632</updated>
++    </task>
++    <task id="LOCAL-00017" summary="finalización de opcion.">
++      <option name="closed" value="true" />
++      <created>1741768297663</created>
++      <option name="number" value="00017" />
++      <option name="presentableId" value="LOCAL-00017" />
++      <option name="project" value="LOCAL" />
++      <updated>1741768297663</updated>
++    </task>
++    <task id="LOCAL-00018" summary="fin de clase">
++      <option name="closed" value="true" />
++      <created>1741774431606</created>
++      <option name="number" value="00018" />
++      <option name="presentableId" value="LOCAL-00018" />
++      <option name="project" value="LOCAL" />
++      <updated>1741774431606</updated>
++    </task>
++    <option name="localTasksCounter" value="19" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+@@ -258,7 +394,34 @@
+       <path value="$PROJECT_DIR$" />
+     </ignored-roots>
+     <MESSAGE value="Commit inicial con el enunciado, las dependencias y los tests." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial con el enunciado, las dependencias y los tests." />
++    <MESSAGE value="Comit Inicial" />
++    <MESSAGE value="Pasa los test de Cliente" />
++    <MESSAGE value="PFin clase" />
++    <MESSAGE value="Pasa los test de clientes" />
++    <MESSAGE value="Fin clase" />
++    <MESSAGE value="Vehículo pasa los test" />
++    <MESSAGE value="Vehículos pasa los test" />
++    <MESSAGE value="fin clase" />
++    <MESSAGE value="Revision pasa los test." />
++    <MESSAGE value="Fin de clase" />
++    <MESSAGE value="finalización de opcion." />
++    <MESSAGE value="fin de clase" />
++    <option name="LAST_COMMIT_MESSAGE" value="fin de clase" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-method">
++          <url>file://$PROJECT_DIR$/src/main/java/org/iesalandalus/programacion/tallermecanico/modelo/negocio/Revisiones.java</url>
++          <line>46</line>
++          <properties class="org.iesalandalus.programacion.tallermecanico.modelo.negocio.Revisiones" method="insertar">
++            <option name="EMULATED" value="true" />
++            <option name="WATCH_EXIT" value="false" />
++          </properties>
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/TallerMecanico$RevisionTest.ic" NAME="RevisionTest Coverage Results" MODIFIED="1706862963586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

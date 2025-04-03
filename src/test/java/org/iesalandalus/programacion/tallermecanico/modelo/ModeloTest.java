@@ -223,7 +223,7 @@ class ModeloTest {
     @Test
     void getClientesLlamaClientesGet() {
         when(clientes.get()).thenReturn(new ArrayList<>(List.of(cliente)));
-        List<Cliente> clientesExistentes = modelo.getCliente();
+        List<Cliente> clientesExistentes = modelo.getClientes();
         verify(clientes).get();
         assertNotSame(cliente, clientesExistentes.get(0));
     }
