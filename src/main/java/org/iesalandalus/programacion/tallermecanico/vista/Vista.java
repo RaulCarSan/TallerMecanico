@@ -53,6 +53,4 @@ public interface Vista {
     void mostarVehiculo(Vehiculo vehiculo);
 
     void mostarCliente(Cliente cliente);
-
-    void setControlador(Controlador controlador);
 }

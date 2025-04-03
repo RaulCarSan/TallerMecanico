@@ -14,9 +14,8 @@ import java.util.Objects;
 import static org.iesalandalus.programacion.tallermecanico.vista.texto.Consola.*;
 
 public class VistaTexto implements Vista {
-public GestorEventos gestorEventos;
+    private GestorEventos gestorEventos;
 
-    private Controlador controlador;
     @Override
     public GestorEventos getGestorEventos(){
         return gestorEventos;
@@ -34,7 +33,6 @@ public GestorEventos gestorEventos;
             evento = Consola.elegirOpcion();
             ejecutar(evento);
         } while (evento != Evento.SALIR);
-        controlador.terminar();
     }
 
     @Override
@@ -210,11 +208,7 @@ public GestorEventos gestorEventos;
         System.out.println(cliente);
     }
 
-    @Override
-    public void setControlador(Controlador controlador) {
-        Objects.requireNonNull(controlador,"El controlador no puede ser nulo.");
-        this.controlador = controlador;
-    }
+
 
 
 }
