@@ -1,6 +1,5 @@
 package org.iesalandalus.programacion.tallermecanico.vista;
 
-import org.iesalandalus.programacion.tallermecanico.modelo.ModeloCascada;
 import org.iesalandalus.programacion.tallermecanico.modelo.negocio.FabricaFuenteDatos;
 import org.iesalandalus.programacion.tallermecanico.vista.texto.VistaTexto;
 

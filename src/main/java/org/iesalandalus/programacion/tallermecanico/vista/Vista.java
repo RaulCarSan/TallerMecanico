@@ -8,6 +8,7 @@ import org.iesalandalus.programacion.tallermecanico.vista.eventos.GestorEventos;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 public interface Vista {
     GestorEventos getGestorEventos();
@@ -36,6 +37,8 @@ public interface Vista {
 
     int leerHoras();
 
+    LocalDate leerMes();
+
     float leerPrecioMaterial();
 
     LocalDate leerFechaCierre();
@@ -53,4 +56,6 @@ public interface Vista {
     void mostarVehiculo(Vehiculo vehiculo);
 
     void mostarCliente(Cliente cliente);
+
+    void mostarEstadisticasMensuales(Map<TipoTrabajo,Integer> estadisticas);
 }
