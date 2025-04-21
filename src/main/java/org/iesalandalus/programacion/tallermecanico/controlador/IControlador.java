@@ -7,7 +7,7 @@ import org.iesalandalus.programacion.tallermecanico.vista.eventos.ReceptorEvento
 public interface IControlador extends ReceptorEventos {
     void comenzar() throws TallerMecanicoExcepcion;
 
-    void terminar();
+    void terminar() throws TallerMecanicoExcepcion;
 
     void actualizar(Evento evento);
 }

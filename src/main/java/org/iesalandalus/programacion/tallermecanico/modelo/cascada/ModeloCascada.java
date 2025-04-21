@@ -4,6 +4,7 @@ import org.iesalandalus.programacion.tallermecanico.modelo.Modelo;
 import org.iesalandalus.programacion.tallermecanico.modelo.TallerMecanicoExcepcion;
 import org.iesalandalus.programacion.tallermecanico.modelo.dominio.*;
 import org.iesalandalus.programacion.tallermecanico.modelo.negocio.*;
+import org.iesalandalus.programacion.tallermecanico.modelo.negocio.ficheros.Vehiculos;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -23,16 +24,21 @@ public class ModeloCascada implements Modelo {
         clientes = fuenteDatos.crearClientes();
         vehiculos = fuenteDatos.crearVehiculos();
         trabajos = fuenteDatos.crearTrabajos();
-        comenzar();
     }
 
     @Override
     public void comenzar(){
+        clientes.comenzar();
+        vehiculos.comenzar();
+        trabajos.comenzar();
         System.out.println("Modelo comenzado");
     }
 
     @Override
-    public void terminar(){
+    public void terminar() throws TallerMecanicoExcepcion {
+        clientes.terminar();
+        vehiculos.terminar();
+        trabajos.terminar();
         System.out.println("El modelo ha terminado.");
     }
 

@@ -64,7 +64,7 @@ public class Controlador implements IControlador {
     }
 
     @Override
-    public void terminar(){
+    public void terminar() throws TallerMecanicoExcepcion {
         vista.terminar();
         modelo.terminar();
     }

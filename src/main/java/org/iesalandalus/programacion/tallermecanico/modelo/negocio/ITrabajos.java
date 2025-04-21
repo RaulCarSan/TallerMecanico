@@ -30,4 +30,8 @@ public interface ITrabajos {
     void borrar(Trabajo trabajo) throws TallerMecanicoExcepcion;
 
     Map<TipoTrabajo,Integer> getEstadisticasMensuales(LocalDate mes);
+
+    void comenzar();
+
+    void terminar() throws TallerMecanicoExcepcion;
 }
