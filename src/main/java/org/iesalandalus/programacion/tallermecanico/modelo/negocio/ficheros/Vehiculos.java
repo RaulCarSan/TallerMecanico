@@ -43,7 +43,7 @@ public class Vehiculos implements IVehiculos {
                 try {
                     insertar(getVehiculo((Element) vehiculo));
                 } catch (TallerMecanicoExcepcion|IllegalArgumentException|NullPointerException e) {
-                    System.out.printf("Error al procesar al procesar el cliente%s:  %s",i,e.getMessage());
+                    System.out.printf("Error al procesar al procesar el cliente %s:  %s",i,e.getMessage());
                 }
             }
         }
@@ -64,8 +64,8 @@ public class Vehiculos implements IVehiculos {
             documentoXml = constructor.newDocument();
             documentoXml.appendChild(documentoXml.createElement(RAIZ));
             for (Vehiculo vehiculo : coleccionVehiculos){
-                Element vehiculos = getElemento(documentoXml, vehiculo);
-                documentoXml.getDocumentElement().appendChild(vehiculos);
+                Element elementoVehiculos = getElemento(documentoXml, vehiculo);
+                documentoXml.getDocumentElement().appendChild(elementoVehiculos);
             }
         }
         return documentoXml;
@@ -129,7 +129,7 @@ public class Vehiculos implements IVehiculos {
     public void terminar() {
         Document documentoXml = crearDocumentoXml();
         UtilidadesXml.escribirDocumentoXml(documentoXml,FICHEROS_VEHICULOS);
-        System.out.println("Fichero vehiculos correctamente.");
+        System.out.println("Fichero vehiculos escrito correctamente.");
     }
 
 }
