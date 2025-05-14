@@ -29,7 +29,7 @@ public class VistaTexto implements Vista {
     }
 
     @Override
-    public void comenzar() throws TallerMecanicoExcepcion {
+    public void comenzar() {
         Evento evento;
         do {
             Consola.mostrarMenu();
@@ -43,30 +43,9 @@ public class VistaTexto implements Vista {
         System.out.println("Me doy el piro, vampiro!");
     }
 
-    private void ejecutar(Evento evento) throws TallerMecanicoExcepcion {
-
-        switch(evento){
-            case INSERTAR_CLIENTE -> gestorEventos.notificar(Evento.INSERTAR_CLIENTE);
-            case INSERTAR_VEHICULO -> gestorEventos.notificar(Evento.INSERTAR_VEHICULO);
-            case INSERTAR_TRABAJO -> gestorEventos.notificar(Evento.INSERTAR_TRABAJO);
-            case BUSCAR_CLIENTE -> gestorEventos.notificar(Evento.BUSCAR_CLIENTE);
-            case BUSCAR_VEHICULO -> gestorEventos.notificar(Evento.BUSCAR_VEHICULO);
-            case BUSCAR_TRABAJO -> gestorEventos.notificar(Evento.BUSCAR_TRABAJO);
-            case MODIFICAR_CLIENTE ->gestorEventos.notificar(Evento.MODIFICAR_CLIENTE);
-            case ANADIR_HORAS_TRABAJO -> gestorEventos.notificar(Evento.ANADIR_HORAS_TRABAJO);
-            case ANADIR_PRECIO_MATERIAL_TRABAJO -> gestorEventos.notificar(Evento.ANADIR_PRECIO_MATERIAL_TRABAJO);
-            case BORRAR_CLIENTE -> gestorEventos.notificar(Evento.BORRAR_CLIENTE);
-            case BORRAR_TRABAJO -> gestorEventos.notificar(Evento.BORRAR_TRABAJO);
-            case CERRAR_TRABAJO -> gestorEventos.notificar(Evento.CERRAR_TRABAJO);
-            case BORRAR_VEHICULO -> gestorEventos.notificar(Evento.BORRAR_VEHICULO);
-            case LISTAR_CLIENTES -> gestorEventos.notificar(Evento.LISTAR_CLIENTES);
-            case LISTAR_TRABAJOS -> gestorEventos.notificar(Evento.LISTAR_TRABAJOS);
-            case LISTAR_TRABAJOS_CLIENTE -> gestorEventos.notificar(Evento.LISTAR_TRABAJOS_CLIENTE);
-            case LISTAR_TRABAJOS_VEHICULO -> gestorEventos.notificar(Evento.LISTAR_TRABAJOS_VEHICULO);
-            case LISTAR_VEHICULOS -> gestorEventos.notificar(Evento.LISTAR_VEHICULOS);
-            case MOSTRAR_ESTADISTICAS_MENSUALES -> gestorEventos.notificar(Evento.MOSTRAR_ESTADISTICAS_MENSUALES);
-            case SALIR -> gestorEventos.notificar(Evento.SALIR);
-        }
+    private void ejecutar(Evento evento)  {
+        Consola.mostrarCabecera(evento.toString());
+        getGestorEventos().notificar(evento);
     }
 
     @Override

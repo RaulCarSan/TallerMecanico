@@ -23,7 +23,7 @@ public class Controlador implements IControlador {
     }
 
     @Override
-    public void comenzar() throws TallerMecanicoExcepcion {
+    public void comenzar() {
         modelo.comenzar();
         vista.comenzar();
     }

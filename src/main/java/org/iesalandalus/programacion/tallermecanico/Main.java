@@ -11,14 +11,10 @@ import org.iesalandalus.programacion.tallermecanico.vista.FabricaVista;
 public class Main {
     public static void main(String[] args) {
         FabricaModelo modelo = FabricaModelo.CASCADA;
-        FabricaVista vista = FabricaVista.TEXTO;
+        FabricaVista vista = FabricaVista.VENTANA;
         FabricaFuenteDatos fuenteDatos = FabricaFuenteDatos.MEMORIA;
         Controlador controlador = new Controlador(modelo,fuenteDatos,vista);
 
-        try {
-            controlador.comenzar();
-        } catch (TallerMecanicoExcepcion e) {
-            System.out.println("ERROR: "+ e.getMessage());
-        }
+        controlador.comenzar();
     }
 }
