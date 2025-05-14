@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b0e04e-6981-41d9-b2bd-c9ae382a0816" name="Changes" comment="Terminado el sprint de ficheros">
+    <list default="true" id="f8b0e04e-6981-41d9-b2bd-c9ae382a0816" name="Changes" comment="Iniciamos la rama vista grafica">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/ventana/LanzadoraVistaGrafica.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/ventana/VistaGrafica.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/iesalandalus/programacion/tallermecanico/vista/ventana/controladores/ControladorListarVehiculos.java" afterDir="false" />
@@ -458,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745324808655</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Iniciamos la rama vista grafica">
+      <option name="closed" value="true" />
+      <created>1747208388166</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1747208388166</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -482,7 +490,8 @@
     <MESSAGE value="Hecho el apartado de las estadisticas mensuales." />
     <MESSAGE value="Ordenacion de los clientes,vehiculos y trabajos." />
     <MESSAGE value="Terminado el sprint de ficheros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Terminado el sprint de ficheros" />
+    <MESSAGE value="Iniciamos la rama vista grafica" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciamos la rama vista grafica" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
